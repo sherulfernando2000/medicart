@@ -1,0 +1,8 @@
+{
+  "name": "medicart",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node --check app.js",
+    "test": "node --test"
+  }
+}
