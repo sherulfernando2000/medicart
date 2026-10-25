@@ -8,14 +8,14 @@ jobs:
       - name: Run tests
         run: echo "All tests passed" && exit 0
 
-deploy:
-  runs-on: ubuntu-latest
-  needs: build-test
-  steps:
-    - uses: actions/checkout@v4
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-test
+    steps:
+      - uses: actions/checkout@v4
 
-    - name: Deploy MediCart Application
-      run: |
-        echo "Deploying MediCart application..."
+      - name: Deploy MediCart Application
+        run: |
+          echo "Deploying MediCart application..."
         
       
